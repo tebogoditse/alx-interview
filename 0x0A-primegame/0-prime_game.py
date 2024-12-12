@@ -3,6 +3,7 @@
 
 
 def isWinner(x, nums):
+    """ Maria and Ben are playing a game """
     Ben = 0
     Maria = 0
 
