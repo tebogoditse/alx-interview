@@ -4,8 +4,8 @@
 
 def isWinner(x, nums):
     """ Maria and Ben are playing a game """
-    Ben = 0
-    Maria = 0
+    ben = 0
+    maria = 0
 
     for round in range(x):
         playing_numbers = [num for num in range(2, nums[round] + 1)]
@@ -21,12 +21,12 @@ def isWinner(x, nums):
 
         prime_count = (len(playing_numbers))
         if prime_count and prime_count % 2:
-            Maria += 1
+            maria += 1
         else:
-            Ben += 1
+            ben += 1
 
-    if Ben > Maria:
+    if ben > maria:
         return "Ben"
-    if Maria > Ben:
+    if maria > ben:
         return "Maria"
     return None
