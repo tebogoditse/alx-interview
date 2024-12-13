@@ -18,7 +18,7 @@ def isWinner(x, nums):
                 playing_numbers.pop(index)
                 index += current_prime - 1
             i += 1
-        
+
         prime_count = (len(playing_numbers))
         if prime_count and prime_count % 2:
             Maria += 1
